@@ -17,17 +17,6 @@ class Pokemon
     Pokemon.new(id: pokemon_found[0], name: pokemon_found[1], type: pokemon_found[2], db: db)
   end
 
-  def alter_hp(new_hp, db)
-    @hp = new_hp
-    sql = <<-SQL
-      UPDATE pokemon
-      SET hp = ?
-      WHERE name = ?
-    SQL
-
-    db.execute(sql,@hp,self.name)
-    # binding.pry
-    # "test"
-  end
+ 
 
 end
