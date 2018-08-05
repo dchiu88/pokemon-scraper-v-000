@@ -51,5 +51,5 @@ describe "Pokemon" do
     let(:pikachu){Pokemon.find(1, @db)}
     let(:magikarp){Pokemon.find(2, @db)}
 
-    
+  end
 end
